@@ -20,6 +20,9 @@ header {
     width: 100%;
     z-index: 1000;
     position: relative;
+    display: flex;
+    justify-content: space-between; /* Added for alignment */
+    align-items: center; /* Added for alignment */
 }
 
 .title {
@@ -209,9 +212,9 @@ main {
 /* Juice squirt animation */
 @keyframes squirt {
     0% {
-        opacity```css
-        1;
-        transform: scale(0) translate(0, 0);
+        opacity: 1;
+        transform```css
+: scale(0) translate(0, 0);
     }
     50% {
         opacity: 0.8;
@@ -257,25 +260,23 @@ main {
 }
 
 .music-player {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px; /* Adjust to align with the header */
+    right: 20px; /* Adjust to align with the header */
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 10px;
-    text-align: center;
-    z-index: 1000;
     color: #00ffff; /* Match the link color */
     font-family: 'Press Start 2P', cursive;
-    display: flex;
-    align-items: center;
 }
 
 .play-button {
     background: #ff1493;
     border: none;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
     margin-left: 10px;
@@ -288,12 +289,15 @@ main {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .header {
+    header {
         padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .title {
         font-size: 1.5em;
+        margin-bottom: 10px;
     }
 
     .nav-bar ul {
@@ -329,5 +333,11 @@ main {
 
     .footer-logo {
         width: 60px;
+    }
+
+    .music-player {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
     }
 }
