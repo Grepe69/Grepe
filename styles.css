@@ -15,7 +15,7 @@ a, button {
 }
 
 header {
-    padding: 40px 20px;
+    padding: 60px 20px; /* Increased padding for the header */
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
     z-index: 1000;
@@ -23,10 +23,10 @@ header {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 2.5em; /* Increased font size */
     color: #ff1493;
     text-shadow: 2px 2px 4px #000000;
-    margin: 0;
+    margin: 0 0 20px 0; /* Added bottom margin */
 }
 
 .nav-bar ul {
@@ -35,7 +35,6 @@ header {
     display: flex;
     justify-content: center;
     margin: 10px 0 0;
-    flex-wrap: wrap;
 }
 
 .nav-bar li {
@@ -59,15 +58,12 @@ main {
 
 .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
 }
 
 .section {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
+    width: 48%;
 }
 
 .about {
@@ -81,7 +77,6 @@ main {
 
 .post-header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-size: 0.9em;
@@ -108,15 +103,13 @@ main {
 
 .post-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .post-image {
-    width: 100%;
+    width: 150px;
     height: auto;
-    max-width: 300px;
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 .post-text {
@@ -126,8 +119,7 @@ main {
     background-color: #f0f0f0;
     padding: 10px;
     border-left: 4px solid #ccc;
-    width: 100%;
-    box-sizing: border-box;
+    width: calc(100% - 170px);
 }
 
 .contract-box {
@@ -253,50 +245,4 @@ main {
     width: 80%; /* Adjust size as needed */
     height: auto;
     opacity: 0.8; /* Adjust transparency as needed */
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .header {
-        padding: 20px 10px;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .nav-bar ul {
-        flex-direction: column;
-    }
-
-    .nav-bar li {
-        margin: 10px 0;
-    }
-
-    .content {
-        flex-direction: column;
-        padding: 0 10px;
-    }
-
-    .section {
-        width: 100%;
-    }
-
-    .post-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .post-image {
-        max-width: 100%;
-    }
-
-    .post-text {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .footer-logo {
-        width: 60px;
-    }
 }
