@@ -203,7 +203,8 @@ main {
     margin-top: 10px;
 }
 
-.progress-bar-fill {
+.progress```css
+-bar-fill {
     height: 20px;
     width: 0;
     background-color: #ff4500;
@@ -213,8 +214,7 @@ main {
 @keyframes squirt {
     0% {
         opacity: 1;
-        transform```css
-: scale(0) translate(0, 0);
+        transform: scale(0) translate(0, 0);
     }
     50% {
         opacity: 0.8;
