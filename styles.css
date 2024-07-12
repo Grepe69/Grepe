@@ -20,9 +20,6 @@ header {
     width: 100%;
     z-index: 1000;
     position: relative;
-    display: flex;
-    justify-content: space-between; /* Added for alignment */
-    align-items: center; /* Added for alignment */
 }
 
 .title {
@@ -203,8 +200,7 @@ main {
     margin-top: 10px;
 }
 
-.progress```css
--bar-fill {
+.progress-bar-fill {
     height: 20px;
     width: 0;
     background-color: #ff4500;
@@ -259,45 +255,14 @@ main {
     opacity: 0.8; /* Adjust transparency as needed */
 }
 
-.music-player {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px; /* Adjust to align with the header */
-    right: 20px; /* Adjust to align with the header */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 10px;
-    color: #00ffff; /* Match the link color */
-    font-family: 'Press Start 2P', cursive;
-}
-
-.play-button {
-    background: #ff1493;
-    border: none;
-    color: #ffffff;
-    padding: 5px 10px;
-    font-family: 'Press Start 2P', cursive;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: background 0.3s ease;
-}
-
-.play-button:hover {
-    background: #ff4500;
-}
-
 /* Responsive design */
 @media (max-width: 768px) {
-    header {
+    .header {
         padding: 20px 10px;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .title {
         font-size: 1.5em;
-        margin-bottom: 10px;
     }
 
     .nav-bar ul {
@@ -333,11 +298,5 @@ main {
 
     .footer-logo {
         width: 60px;
-    }
-
-    .music-player {
-        top: auto;
-        bottom: 20px;
-        right: 20px;
     }
 }
