@@ -15,7 +15,7 @@ a, button {
 }
 
 header {
-    padding: 40px 20px;
+    padding: 60px 20px; /* Increased padding for the header */
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
     z-index: 1000;
@@ -23,10 +23,10 @@ header {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 2.5em; /* Increased font size */
     color: #ff1493;
     text-shadow: 2px 2px 4px #000000;
-    margin: 0;
+    margin: 0 0 20px 0; /* Added bottom margin */
 }
 
 .nav-bar ul {
@@ -226,8 +226,7 @@ main {
 .footer-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px; /* Space between text and logo */
+    justify-content: space-between; /* Change from center to space-between */
     padding: 10px 0;
 }
 
