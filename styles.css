@@ -246,3 +246,43 @@ main {
     height: auto;
     opacity: 0.8; /* Adjust transparency as needed */
 }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 20px; /* Add some space between sections */
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        margin: 10px 0; /* Add some space between navigation items */
+    }
+
+    .post-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-image {
+        width: 80%; /* Adjust size as needed */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .post-text {
+        width: 90%;
+    }
+
+    .superimposed-image {
+        width: 90%; /* Adjust size as needed */
+    }
+}
